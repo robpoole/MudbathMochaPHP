@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteBase /
+Options +FollowSymLinks -MultiViews
+
+RewriteRule ^/?$ menu.php
+RewriteRule ^menu?$ menu.php
+RewriteRule ^orders?$ orders.php
+RewriteRule ^payments?$ payments.php
+RewriteRule ^summary?$ summary.php
+RewriteRule ^results?$ results.php
+
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule .* 404.php [L] 

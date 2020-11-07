@@ -1,0 +1,88 @@
+// sass --watch styles.scss:styles.css --style compressed
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap');
+
+// Colours
+$moodyBlue: #0a3043;
+$happyBlue: #20befc;
+$mocha: #744322;
+$green: #2ecc71;
+$red: #e74c3c;
+
+* {
+	font-family: 'Noto Sans JP', sans-serif;
+	transition: all 0.3s;
+}
+
+header {
+	margin: 0 0 3rem;
+	.logo {
+		color: $moodyBlue;
+		font-size: 2rem;
+		font-weight: 900;
+		.dot {
+			color: $happyBlue;
+		}
+		.mocha {
+			color: $mocha;
+		}
+	}
+	nav {
+		a {
+			color: $moodyBlue;
+			display: inline-block;
+			padding: 1rem 1rem 1rem 0;
+			text-decoration: none;
+			&:hover {
+				color: $happyBlue;
+			}
+		}
+	}
+}
+
+body {
+	padding: 0 2rem;
+}
+
+.drink {
+	font-size: 1.5rem;
+}
+
+.prices {
+	margin: 0.5rem 0 2rem;
+	.size {
+		background: #eee;
+		border-radius: 0.5rem;
+		display: inline-block;
+		margin: 0 1rem 0 0;
+		padding: 0.25rem 0.5rem;
+		&:hover {
+			background: $happyBlue;
+		}
+	}
+}
+
+.user {
+	margin: 0 0 1rem;
+	.name {
+		display: inline-block;
+		font-size: 1.5rem;
+		width: 10rem;
+	}
+	.price {
+		background: #eee;
+		border-radius: 0.5rem;
+		display: inline-block;
+		margin: 0 1rem 0 0;
+		padding: 0.25rem 0.5rem;
+
+		&.red {
+			background: $red;
+		}
+
+		&.green {
+			background: $green;
+		}
+	}
+}
